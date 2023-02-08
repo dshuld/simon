@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- Tell browsers not to scale the viewport automatically -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dylan's Simon Game</title>
+    <link rel="icon" href="favicon.ico" />
+</head>
+
+<body>
+    <header>
+        <h1>Simon<sup>&reg;</sup> Game</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="play.html">Play</a> |
+            <a href="scores.html">Scores</a> |
+            <a href="about.html">About</a>
+        </nav>
+        <hr/>
+    </header>
+
+    <main>
+        <p>
+            <strong>Player: </strong>
+            <span id="player-name">Unknown</span>
+        </p>
+        <p>
+            <strong>Score: </strong>
+            <input type="text" id="score" value="--" readonly />
+        </p>
+
+        <button>Reset</button>
+
+        <p></p>
+
+        <div class="game">
+            <div>
+                <button id="green">
+                    <svg aria-hidden="true" viewBox="0 0 100 100" height="100" width="100">
+                        <path d="M 95,5 95,95 5,95 Q 5,5 95,5" fill="darkgreen" />
+                    </svg>
+                </button>
+                <button id="red">
+                    <svg aria-hidden="true" viewBox="0 0 100 100" height="100" width="100">
+                        <path d="M5,5 5,95 95,95 Q 95,5 5,5" fill="darkred" />
+                    </svg>
+                </button>
+            </div>
+            <div>
+                <button id="blue">
+                    <svg aria-hidden="true" viewBox="0 0 100 100" height="100" width="100">
+                        <path d="M5,5 95,5 95,95 Q 5,95 5,5" fill="darkblue" />
+                    </svg>
+                </button>
+                <button id="yellow">
+                    <svg aria-hidden="true" viewBox="0 0 100 100" height="100" width="100">
+                        <path d="M95,5 5,5 5,95 Q 95,95 95,5" fill="gold" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <hr/>
+        <p>Designed by Dylan Shuldberg</p>
+        <a href="https://github.com/dshuld/simon">Github</a>
+    </footer>
+</body>
