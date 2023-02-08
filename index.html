@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 
 <head>
+    <meta charset="UTF-8" />
+    <!-- Tell browsers not to scale the viewport automatically -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dylan's Simon Game</title>
+    <link rel="icon" href="favicon.ico" />
 </head>
 
 <body>
+    <header>
+        <h1>Welcome to Simon<sup>&reg;</sup> Game</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="play.html">Play</a> |
+            <a href="scores.html">Scores</a> |
+            <a href="about.html">About</a>
+        </nav>
+        <hr/>
+    </header>   
 
+    <div class="login">
+        <h3>Login</h3>
+        <form method="get" action="play.html">
+        <label for="name">Username: </label>
+        <input type="text" id="username"/>
+        <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <footer>
+        <hr/>
+        <p>Designed by Dylan Shuldberg</p>
+        <a href="https://github.com/dshuld/simon">Github</a>
+    </footer>
 </body>
 
-<footer>
-    <p>Designed by Dylan Shuldberg</p>
-    <a href="https://github.com/dshuld/simon">Github</a>
-</footer>
