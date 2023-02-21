@@ -30,42 +30,18 @@
 
     <main>
         <p>
-            <strong>Player: </strong>
+            <span class="label">Player: </span>
             <span id="player-name">Unknown</span>
         </p>
-        <p>
-            <strong>Score: </strong>
-            <input type="text" id="score" value="--" readonly />
-        </p>
-
-        <button>Reset</button>
-
-        <p></p>
 
         <div class="game">
-            <div>
-                <button id="green">
-                    <svg aria-hidden="true" viewBox="0 0 100 100" height="100" width="100">
-                        <path d="M 95,5 95,95 5,95 Q 5,5 95,5" fill="darkgreen" />
-                    </svg>
-                </button>
-                <button id="red">
-                    <svg aria-hidden="true" viewBox="0 0 100 100" height="100" width="100">
-                        <path d="M5,5 5,95 95,95 Q 95,5 5,5" fill="darkred" />
-                    </svg>
-                </button>
-            </div>
-            <div>
-                <button id="blue">
-                    <svg aria-hidden="true" viewBox="0 0 100 100" height="100" width="100">
-                        <path d="M5,5 95,5 95,95 Q 5,95 5,5" fill="darkblue" />
-                    </svg>
-                </button>
-                <button id="yellow">
-                    <svg aria-hidden="true" viewBox="0 0 100 100" height="100" width="100">
-                        <path d="M95,5 5,5 5,95 Q 95,95 95,5" fill="gold" />
-                    </svg>
-                </button>
+            <button id="green-button"></button>
+            <button id="red-button"></button>
+            <button id="blue-button"></button>
+            <button id="yellow-button"></button>
+            <div class="controls">
+                <input type="text" id="score" value="--" readonly />
+                <button id="reset-button">Reset</button>
             </div>
         </div>
     </main>
