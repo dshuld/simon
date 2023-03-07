@@ -33,13 +33,13 @@
             </p>
             <div class="game center">
                 <div class="button-container">
-                    <button id="green-button"></button>
-                    <button id="red-button"></button>
-                    <button id="yellow-button"></button>
-                    <button id="blue-button"></button>
+                    <button class="game-button" id="green-button" onclick="game.pressButton(this)"></button>
+                    <button class="game-button" id="red-button" onclick="game.pressButton(this)"></button>
+                    <button class="game-button" id="yellow-button" onclick="game.pressButton(this)"></button>
+                    <button class="game-button" id="blue-button" onclick="game.pressButton(this)"></button>
                     <div class="controls center">
-                        <div class="score">--</div>
-                        <button class="btn btn-primary" id="reset-button">Reset</button>
+                        <div id="score">--</div>
+                        <button class="btn btn-primary" id="reset-button" onclick="game.reset()">Reset</button>
                     </div>
                 </div>
             </div>
@@ -50,4 +50,6 @@
             <a href="https://github.com/dshuld/simon">Github</a>
         </footer>
     </body>
+
+    <script src="play.js"></script>
 </html>
