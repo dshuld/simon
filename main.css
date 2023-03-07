@@ -115,7 +115,7 @@ menu .nav-item {
     flex-direction: column;
 }
   
-.score {
+#score {
     position: absolute;
     text-align: center;
     font-size: 20px;
